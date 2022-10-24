@@ -117,7 +117,7 @@
 }
 
 #newLaunchBox {
-    background: rgba(0, 0, 0, 0.7) url(Images/newLaunchMobile.jpg) no-repeat center center/cover;
+    background: rgba(0, 0, 0, 0.7) url(images/newLaunchMobile.jpg) no-repeat center center/cover;
     background-blend-mode: darken;
     height: 100vh;
     display: flex;
