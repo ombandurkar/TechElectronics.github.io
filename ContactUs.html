@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us</title>
+    <style>
+        /*For company website name */
+        @import url('https://fonts.googleapis.com/css2?family=Iceberg&display=swap');
+
+        /* For nav bar */
+        @import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri&display=swap');
+
+        /* For main box text */
+        @import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
+
+
+        .navbar {
+            background-color: rgb(254, 254, 254);
+            border-bottom: 2px solid #bebaba;
+            font-family: 'Hind Siliguri', sans-serif;
+        }
+
+        .navbar ul {
+            overflow: auto;
+        }
+
+        .navbar li {
+            list-style: none;
+            display: inline-block;
+        }
+
+        .navbar li a {
+            font-size: 1.1em;
+            text-decoration: none;
+            float: left;
+            padding: 2px 10px;
+            margin-right: 70px;
+            margin-left: 70px;
+            position: relative;
+            color: rgb(0, 0, 0);
+        }
+
+        .navbar li a:hover {
+            color: rgb(255, 255, 255);
+            background-color: rgb(0, 0, 0);
+        }
+
+        #companyName{
+            font-size: 3em;
+            font-family: 'Iceberg', cursive;;
+            background-color: black;
+            color: white;
+        }
+
+        #companyName:hover {
+            color: white;
+            background-color: black;
+        }
+
+        main {
+            font-size: 1.1em;
+            font-family: 'Barlow', sans-serif;
+        }
+
+        .getHelpBox {
+            text-align: center;
+        }
+
+        .getHelp {
+            font-size: 2em;
+            padding-top: 1em;
+            font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+        }
+
+        #getHelpSearch {
+            padding: 0.8em;
+        }
+
+        #helpInContact {
+            padding: 1em 10em;
+            border-radius: 1em;
+            font-size: 1em;
+        }
+
+        .toFlex {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content:center;
+        }
+
+        .querySection {
+            display: inline-block;
+            width: 35em;
+            padding: 1.5em;
+            margin: 2em;
+        }
+
+        .complainSection {
+            display: inline-block;
+            width: 35em;
+            padding: 1.5em;
+            margin: 2em;
+        }
+
+        .previousOrders {
+            display: inline-block;
+            width: 35em;
+            padding: 1.5em;
+            margin: 2em;
+        }
+
+        .infoEnquiry {
+            display: inline-block;
+            width: 35em;
+            padding: 1.5em;
+            margin: 2em;
+        }
+
+        #queryText {
+            height: 5em;
+        }
+
+        .previousOrders li {
+            list-style: none;
+        }
+
+        .previousOrders a {
+            color: black;
+            text-decoration: none;
+        }
+
+        .previousOrdersListItem {
+            padding: 0.5em;
+            margin-left: 0em;
+        }
+
+        .previousOrders ul {
+            padding-left: 0.8em;
+        }
+
+        .enquiryBox {
+            margin: 1em;
+        }
+
+        .businessInfo {
+            padding-bottom: 1em;
+        }
+
+        footer {
+            border-top: 2px solid #bebaba;
+            margin-top: 2em;
+            display: flex;
+            font-size: 1.1em;
+            font-family: 'Barlow', sans-serif;
+        }
+
+        .boxSocial {
+            margin: 1em;
+            padding: 1em;
+            margin-left: 4em;
+        }
+
+        .insta {
+            display: inline-block;
+            margin: 1em;
+            margin-left: -1em;
+            padding: 1em;
+            height: 2em;
+            width: 2em;
+        }
+
+        .twitter {
+            display: inline-block;
+            margin: 1em;
+            padding: 1em;
+            height: 2em;
+            width: 2em;
+        }
+
+        .facebook {
+            display: inline-block;
+            margin: 1em;
+            padding: 1em;
+            height: 2em;
+            width: 2em;
+        }
+
+        .policiesBox {
+            margin: 1em;
+            padding: 1em;
+            margin-left: 18em;
+        }
+
+        .policiesBox a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .policiesBox a:hover {
+            text-decoration: underline;
+        }
+
+        #privacyPolicy {
+            padding: 0.4em;
+        }
+
+        #termsOfService {
+            padding: 0.4em;
+        }
+
+        .emailBox {
+            margin: 2em;
+            margin-left: 10em;
+        }
+
+        #email {
+            margin-top: 0.8em;
+            padding: 0.1em;
+        }
+
+        #phone {
+            margin-top: 0.4em;
+            padding: 0.1em;
+        }
+
+        #devLoved {
+            text-align: center;
+            font-size: 1.3em;
+            margin-bottom: 2.5em;
+            font-family: 'Barlow', sans-serif;
+        }
+
+        .copyright {
+            text-align: center;
+            font-size: 1.1em;
+            margin-bottom: 1.5em;
+            font-family: 'Barlow', sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html" target="_blank" id="companyName">TechElectronics</a></li>
+                <li><a href="index.html" target="_blank">Home</a></li>
+                <li><a href="OurProducts.html" target="_blank">Our products</a></li>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="AboutUs.html" target="_blank">About us</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <main>
+        <section class="getHelpBox">
+            <div class="getHelp">
+                GET HELP
+            </div>
+
+            <div id="getHelpSearch">
+                <input type="text" name="helpInContact" id="helpInContact" placeholder="what can we help you with?">
+            </div>
+        </section>
+        <section class="toFlex">
+            <section class="querySection">
+                <h3 id="query">Have any query related to any of our products?</h3>
+                <div>
+                    Feel free to ask us about it!
+                </div>
+                <br>
+                <div class="formBox">
+                    <form>
+                        <div id="Myname">
+                            <label for="Myname">Name: </lable>
+                                <input type="text" name="Myname" id="Myname" placeholder="First name">
+                                <input type="text" name="Myname" id="Myname" placeholder="Last name">
+                        </div>
+                        <br>
+
+                        <div>
+                            <label for="email">Email: </label>
+                            <input type="email" name="email" id="email" placeholder="example@xyz.com">
+                        </div>
+                        <br>
+
+                        <div>
+                            <label for="mobileNumber">Mobile No.: </label>
+                            <input type="tel" name="mobileNumber" id="mobileNumber" placeholder="Contact number">
+                        </div>
+                        <br>
+
+                        <div>
+                            <label for="productType">Type of product: </label>
+                            <select name="productType" id="productType">
+                                <option value="mob">Mobile phone</option>
+                                <option value="tab">Tablet</option>
+                                <option value="lap">Laptop</option>
+                                <option value="tv">TV</option>
+                                <option value="homeTheater">Home theater system</option>
+                                <option value="fridge">Refrigerator</option>
+                                <option value="ac">Air conditioner</option>
+                                <option value="pc">PCs</option>
+                                <option value="watch">Smart watch</option>
+                                <option value="earphones">Earphones/Headphones</option>
+                                <option value="cam">Camera</option>
+                                <option value="bluetooth">Bluetooth speaker</option>
+                                <option value="others">Other accessories</option>
+                            </select>
+                        </div>
+                        <br>
+                        <div>
+                            <input type="text" name="queryText" id="queryText" placeholder="Enter your query here">
+                        </div>
+                        <br>
+
+                        <div>
+                            <input type="submit" name="submit" value="Submit">
+                            <input type="reset" name="reset" value="Reset">
+                        </div>
+                    </form>
+                </div>
+            </section>
+
+            <section class="complainSection">
+                <h3 id="complain">Have any complain regarding any of our products?</h3>
+                <div>
+                    Feel free to register your complain, we'll notify our team regarding your probelm and they will
+                    assist
+                    you with your issue and resolve them as soon as possible
+                </div>
+                <br>
+                <div class="formBox">
+                    <form>
+                        <div id="Myname">
+                            <label for="Myname2">Name: </lable>
+                                <input type="text" name="Myname2" id="Myname2" placeholder="First name">
+                                <input type="text" name="Myname2" id="Myname2" placeholder="Last name">
+                        </div>
+                        <br>
+
+                        <div>
+                            <label for="email2">Email: </label>
+                            <input type="email" name="email2" id="email2" placeholder="example@xyz.com">
+                        </div>
+                        <br>
+
+                        <div>
+                            <label for="productType2">Type of product: </label>
+                            <select name="productType2" id="productType2">
+                                <option value="mob">Mobile phone</option>
+                                <option value="tab">Tablet</option>
+                                <option value="lap">Laptop</option>
+                                <option value="tv">TV</option>
+                                <option value="homeTheater">Home theater system</option>
+                                <option value="fridge">Refrigerator</option>
+                                <option value="ac">Air conditioner</option>
+                                <option value="pc">PCs</option>
+                                <option value="watch">Smart watch</option>
+                                <option value="earphones">Earphones/Headphones</option>
+                                <option value="cam">Camera</option>
+                                <option value="bluetooth">Bluetooth speaker</option>
+                                <option value="others">Other accessories</option>
+                            </select>
+                        </div>
+                        <br>
+
+                        <div>
+                            <label for="productId">Product Id: </label>
+                            <input type="text" name="productId" id="productId" placeholder="Product Id">
+                        </div>
+                        <br>
+
+                        <div>
+                            <label for="dateOfPurchase">Date of purchase: </label>
+                            <input type="date" name="dateOfPurchase" id="dateOfPurchase" placeholder="Product Id">
+                        </div>
+                        <br>
+                        <div>
+                            Is your product under warranty?
+                            <input type="radio" name="warranty" id="yes">
+                            <label for="yes">Yes</label>
+
+                            <input type="radio" name="warranty" id="no">
+                            <label for="no">No</label>
+
+                            <input type="radio" name="warranty" id="idk">
+                            <label for="idk">I don't know</label>
+                        </div>
+                        <br>
+
+                        <div>
+                            <input type="submit" name="submit" value="Submit">
+                            <input type="reset" name="reset" value="Reset">
+                        </div>
+                    </form>
+                </div>
+            </section>
+
+            <section class="previousOrders">
+                <h3 id="pastOrders">For past orders related queries -</h3>
+                <div>
+                    Get answers to our most frequently asked questions for past orders in one click
+                </div>
+                <div>
+                    <ul>
+                        <li class="previousOrdersListItem"><a href="#">Replace/Return my past order(s)</a></li>
+                        <li class="previousOrdersListItem"><a href="#">Refund of my past order(s)</a></li>
+                        <li class="previousOrdersListItem"><a href="#">Shipping/Delivery of my order(s)</a></li>
+                    </ul>
+                </div>
+                <div>
+                    Not statisfied with the answers in FAQs? Feel free to email us and we will reply within 5 business
+                    days.
+                </div>
+                <div>
+                    &#9993;: pastorders@TechElectronics.com
+                </div>
+            </section>
+
+            <section class="infoEnquiry">
+                <h3 id="businessEnquiry">For company info and business enuquires - </h3>
+                <div class="enquiryBox">
+                    <div class="businessInfo">
+                        Call us at xxx xxxx xxxxx
+                    </div>
+                    <div class="businessInfo">
+                        Email us at: Business@TechElectronics.com
+                    </div>
+                    <div class="businessInfo">
+                        Monday - Friday
+                    </div>
+                    <div class="businessInfo">
+                        9:00 - 17:00
+                    </div>
+                </div>
+            </section>
+        </section>
+
+    </main>
+    <footer>
+        <section class="boxSocial">
+            <span id="socialHandles">Our social handles -</span>
+            <div class="socialButtons">
+                <div class="insta">
+                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                            <!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                            <path
+                                d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                        </svg></a>
+                </div>
+                <div class="twitter">
+                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                            <path
+                                d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z" />
+                        </svg></a>
+                </div>
+
+                <div class="facebook">
+                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                            <path
+                                d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z" />
+                        </svg></a>
+                </div>
+            </div>
+        </section>
+
+        <section class="emailBox">
+            <span id="contact">Contacts - </span>
+            <div id="email">Email : TechElectronics@email.com</div>
+            <div id="phone">Phone : +91 xxxx xxxxxx</div>
+        </section>
+
+        <section class="policiesBox">
+            <div>
+                <div id="privacyPolicy"><a href="#">Privacy Policy</a></div>
+                <div id="termsOfService"> <a href="#">Terms Of services</a></div>
+                <div id="termsOfService"> <a href="FAQs.html" target="_blank">FAQs</a></div>
+            </div>
+        </section>
+    </footer>
+    <div id="devLoved">Developed with &#10084; in India</div>
+    <section class="copyright">
+        Copyright &copy;2022 TechElectronics Inc
+        <div>All rights reserved</div>
+    </section>
+</body>
+
+</html>
